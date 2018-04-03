@@ -1,4 +1,4 @@
-package com.directv.dap.tb.s3;
+package com.company.dap.tb.s3;
 
 import com.amazonaws.services.s3.model.ListObjectsRequest;
 import com.amazonaws.services.s3.model.ObjectListing;
