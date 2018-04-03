@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>s3-pull</groupId>
+    <artifactId>s3pull</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>nexus-dtv-cds-releases</id>
+            <name>DTV CDS Nexus Releases</name>
+            <url>http://repomgtlsmsdc01.ds.dtveng.net:8081/nexus/content/repositories/dev-releases/</url>
+        </repository>
+        <repository>
+            <id>nexus-dtv-cds-snapshots</id>
+            <name>DTV CDS Nexus Snapshots</name>
+            <url>http://repomgtlsmsdc01.ds.dtveng.net:8081/nexus/content/repositories/dev-snapshots/</url>
+        </repository>
+        <repository>
+            <id>nexus-dtv-hortonworks-releases</id>
+            <name>DTV HortonWorks Releases proxy</name>
+            <url>http://repomgtlsmsdc01.ds.dtveng.net:8081/nexus/content/repositories/HortonWorksReleases/</url>
+        </repository>
+        <repository>
+            <id>nexus-dtv-hortonworks-public</id>
+            <name>DTV HortonWorks Public proxy</name>
+            <url>https://nexus.dtveng.net/nexus/content/repositories/HortonWorksPublic/</url>
+        </repository>
+        <!--
+        <repository>
+            <id>nexus-dtv-cloudera</id>
+            <name>DTV Cloudera proxy</name>
+            <url>https://nexus.dtveng.net/nexus/content/repositories/cloudera/</url>
+        </repository>
+     -->
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-dtv-cds-releases</id>
+            <name>DTV CDS Nexus Releases</name>
+            <url>https://nexus.dtveng.net/nexus/content/repositories/dev-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-dtv-cds-snapshots</id>
+            <name>DTV CDS Nexus Snapshots</name>
+            <url>https://nexus.dtveng.net/nexus/content/repositories/dev-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus-dtv-cds-releases</id>
+            <name>DTV CDS Nexus Releases</name>
+            <url>https://nexus.dtveng.net/nexus/content/repositories/dev-releases/</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <dependencies>
+
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk</artifactId>
+            <version>1.7.4</version>
+        </dependency>
+        <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.25</version>
+    </dependency>
+    </dependencies>
+
+
+</project>
